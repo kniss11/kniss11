@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체(object)</title>
+</head>
+<body>
+    배열(array) :여러개의 데이타를 하나의 변수에 한번에 저장
+    객체(object): 여러개의 데이타를 하나의 변수에 한번에 저장(함수)
+    
+
+
+
+
+
+
+    <script>
+        let arr=[100, '홍길동', 10, '바나나'];
+        document.write(arr+'<br>');
+        document.write(arr[1] + '<br>');
+        for(let i=0 ; i<arr.length;i++){
+            document.write(arr[i] + '<br>');
+        }
+
+
+        document.write("<hr>")
+
+        const arr2 ={
+            '점수':100,
+            '성명': '홍길동',
+            '번호': 10,
+            '과일': '바나나'
+
+        }
+
+        document.write(arr2.점수 + "<br>")
+        document.write(arr2.성명 + "<br>")
+        document.write(arr2.번호 + "<br>")
+        document.write(arr2.과일 + "<br>")
+
+        
+        document.write("<hr>")
+        for(key in arr2){
+            document.write(key + "=" + arr2[key] + "<br>");
+        }
+
+        document.write("<hr>")
+
+        // 응용문제1
+
+        // 배열선언
+        // 배열 접근 데이타 출력
+        // 반복문 한꺼번에 출력
+
+        // 객체선언
+        // 객체안에 데이타 접근하여 출력
+        // 반복문을 한꺼번에 출력 Key 값 = 데이타 값
+
+        
+        // 국어 100점
+        // 영어 90점
+        // 수학 80점
+        // 전산 70점
+
+       document.write("<hr>")
+
+
+
+       let test =["국어 100점", "영어 90점", "수학 80점", "전산 70점"]
+       document.write(test[0] + "<br>");
+       document.write(test[1] + "<br>");
+       document.write(test[2] + "<br>");
+       document.write(test[3] + "<br>");
+
+
+       
+       document.write("<hr>")
+
+       for(i=0 ; i<test.length ; i++){
+           document.write(test[i] + '<br>');
+        }  
+
+       const test2={
+           '국어' : '100점',
+           '영어' : '90점',
+           '수학' : '80점',
+           '전산' : '70점'
+       }     
+       document.write("<hr>")
+       document.write("<hr>")
+
+       document.write(test2.국어 + '<br>');
+       document.write(test2.영어 + '<br>');
+       document.write(test2.수학 + '<br>');
+       document.write(test2.전산 + '<br>');
+       document.write("<hr>")
+       for( key in test2){
+           document.write(key +"=" +test2[key] + '<br>')
+       }
+
+
+
+
+
+
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
